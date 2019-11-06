@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Box Lift (margins)</title>
+
+    <!-- iii. Daca stergem blocul start nu vom putea impinge liftul in jos, din motiv ca el va impinge cu tot cu parinte  
+         iv. Blocul start este cel care asigura ca sa existe suprapunerea dintre lift si start.
+        Bonus 1. Nimic, va fi la fel ca si rezultatul obtinut de mine.
+        Bonus 2. Va cistiga marginul liftului.
+    
+    -->
+
+
+
+
+    <style>
+    
+        .building{
+            width: 200px;
+            height: 500px;
+            background-color: #999;
+            margin:auto;
+        }
+        .shaft{
+            width: 50px;
+            height: 500px;
+            background: #333;
+            margin:auto;
+            
+        }
+        .start{
+            width: 40px;
+            height: 5px;
+            background-color: red;
+            margin: auto;
+            margin-bottom:415px;
+        }
+        .lift{
+            width: 40px;
+            height: 80px;
+            background: #111;
+            color: white;
+            margin:auto;
+            margin-top:415px;
+        
+            
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="building">
+        <div class="shaft">
+            <div class="start"></div>
+            <div class="lift">
+                BOB
+            </div>
+        </div>
+    </div>
+
+    
+</body>
